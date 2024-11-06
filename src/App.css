@@ -1,0 +1,75 @@
+/* Estilos generales para la aplicación */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Fondo azul claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos del contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los campos de entrada */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+  color: #333333;
+}
+
+/* Efecto de enfoque en los campos de entrada */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos del botón de ingreso */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Azul */
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+button:hover {
+  background-color: #0056b3; /* Azul oscuro */
+}
+
+/* Contenedor de formulario de inicio de sesión */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Encabezado */
+h1 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
