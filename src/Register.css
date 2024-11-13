@@ -1,0 +1,100 @@
+/* Estilo general del formulario */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007BFF; /* Azul brillante */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para las etiquetas y los inputs */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #f0f0f0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    background-color: #333; /* Fondo gris oscuro */
+    color: white;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #0056b3; /* Azul más oscuro al hacer foco */
+    background-color: #444;
+  }
+  
+  /* Estilo para el botón de registro */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Efecto visual al pasar el ratón por encima */
+  button[type="submit"]:active {
+    transform: scale(0.98); /* Efecto de "clic" */
+  }
+  
+  /* Personalización para mensajes y otros elementos */
+  .profile-item,
+  .dashboard-stats,
+  .payment-history {
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-header {
+    text-align: center;
+    padding: 15px;
+    color: #007BFF;
+  }
+  
+  .dashboard-footer button {
+    background-color: #1a1a1a;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    transition: all 0.3s;
+  }
+  
+  .dashboard-footer button:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+  }
+  

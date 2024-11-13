@@ -1,5 +1,6 @@
 // Profile.jsx
 import React from 'react';
+import './Profile.css';
 
 function Profile({ usuario, ocupacion, nivelAcademico, onCerrarSesion, onCambiarContraseña }) {
   return (

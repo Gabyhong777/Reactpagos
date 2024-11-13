@@ -9,10 +9,28 @@ function PaymentForm() {
   const [cvv, setCvv] = useState('');
   const [saveCard, setSaveCard] = useState(false);
 
-  const handlePayment = (e) => {
+
+  const handlePayment =  async (e) => {
     e.preventDefault();
-    if (cardNumber.length === 16 && cvv.length === 3 && expiryDate) {
-      alert('Pago realizado con éxito');
+
+    if (cardNumber.length === 16 && cvv.length === 3 && expiryDate && cardName) {
+      try {
+        const response = await fetch('http://localhost:5000/api/payment', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ cardName, cardNumber, expiryDate, cvv, saveCard })
+        });
+
+        if (response.ok) {
+          alert('Pago realizado con éxito');
+        } else {
+          const errorData = await response.json();
+          alert(`Error: ${errorData.message}`);
+        }
+      } catch (error) {
+        console.error('Error de conexión:', error);
+        alert('Error al conectar con el servidor');
+      }
     } else {
       alert('Por favor, complete todos los campos correctamente');
     }

@@ -2,7 +2,7 @@
 import React from 'react';
 import './Dashboard.css';
 
-function Dashboard({onRealizarPagoClick}) {
+function Dashboard({onRealizarPagoClick, irAProfile}) {
   return (
     <div className="dashboard">
       <header className="dashboard-header">
@@ -65,7 +65,7 @@ function Dashboard({onRealizarPagoClick}) {
 
       <footer className="dashboard-footer">
         <button className="action-button" onClick={onRealizarPagoClick}>Realizar Pago</button>
-        <button className="action-button">Configurar Perfil</button>
+        <button className="action-button" onClick={irAProfile}>Configurar Perfil</button>
       </footer>
     </div>
   );
